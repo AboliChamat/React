@@ -32,7 +32,11 @@ function TodoList() {
       </div>
       <br />
         {todoList.map((item, id)=>{
-            return (<div key={id} style={{display:"flex"}}><li>{item}</li><button onClick={()=>handleDelete(id)}>Delete</button></div>)
+            return (
+              <div key={id} style={{display:"flex"}}>
+              <li>{item}</li>
+              <button onClick={()=>handleDelete(id)}>Delete</button>
+              </div>)
         })}
     </div>
   );
