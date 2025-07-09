@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "first_name": "Paddy",
+    "email": "pthowes0@epa.gov",
+    "gender": "Male"
+  },
+  {
+    "id": 2,
+    "first_name": "Briggs",
+    "email": "balenin1@dion.ne.jp",
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "first_name": "Meredith",
+    "email": "moughton2@unblog.fr",
+    "gender": "Female"
+  },
+  {
+    "id": 4,
+    "first_name": "Hubie",
+    "email": "harsnell3@opensource.org",
+    "gender": "Male"
+  },
+  {
+    "id": 5,
+    "first_name": "Holden",
+    "email": "hdowns4@google.pl",
+    "gender": "Genderfluid"
+  },
+  {
+    "id": 6,
+    "first_name": "Yank",
+    "email": "ycuffe5@mlb.com",
+    "gender": "Male"
+  },
+  {
+    "id": 7,
+    "first_name": "Preston",
+    "email": "ptrower6@google.nl",
+    "gender": "Male"
+  },
+  {
+    "id": 8,
+    "first_name": "Doll",
+    "email": "dskews7@hp.com",
+    "gender": "Female"
+  },
+  {
+    "id": 9,
+    "first_name": "Mireille",
+    "email": "mdeignan8@technorati.com",
+    "gender": "Female"
+  },
+  {
+    "id": 10,
+    "first_name": "Kat",
+    "email": "klaight9@photobucket.com",
+    "gender": "Non-binary"
+  }
+]
