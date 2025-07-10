@@ -10,7 +10,7 @@ function TodoList() {
     setTodo(todo);
     setTodoList([...todoList, todo]);
     setTodo('');
-  }
+  }     
   const handleRemove = () =>{
     setTodoList([]);
   }
