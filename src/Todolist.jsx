@@ -7,7 +7,6 @@ function Todolist() {
   const handlechange=(e)=>{
     setTodo(e.target.value);
   };
-
   const handleclick = () => {
     if (editingIndex !== null) {
       const updatedList = [...todoList];
@@ -30,7 +29,7 @@ function Todolist() {
     }
   };
   const handleDelete=(id)=>{
-    setTodoList(todoList.filter((_,i)=>id!==1));
+    setTodoList(todoList.filter((elem,i)=>id!==i));
   }
   const handleRemove=()=>{
     setTodoList([]);
