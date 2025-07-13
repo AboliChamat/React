@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, {useState} from 'react';
 
-function TodoList() {
-  const [todo, setTodo] = useState("");
-  const [todoList, setTodoList] = useState([]);
-  const [editingIndex, setEditingIndex] = useState(null);
-  const handlechange = (e) => {
+function Todolist() {
+  const[todo, setTodo]=useState("");
+  const[todoList,setTodoList]=useState([]);
+  const[editingIndex,setEditingIndex]=useState(null);
+  const handlechange=(e)=>{
     setTodo(e.target.value);
   };
 
@@ -14,50 +14,42 @@ function TodoList() {
       updatedList[editingIndex] = todo;
       setTodoList(updatedList);
       setEditingIndex(null);
-    } else {
-      setTodoList([...todoList, todo]);
+    }
+    else{
+      setTodoList([...todoList,todo])
     }
     setTodo('');
-  };
-
-  const handleUpdate = (id, item) => {
+  }
+  const handleUpdate=(id,item)=>{
     setTodo(item);
     setEditingIndex(id);
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      handleclick(); 
+  }
+  const handleKeyDown=(e)=>{
+    if(e.key==="Enter"){
+      handleclick();
     }
   };
-
-
-  const handleDelete = (id) => {
-    setTodoList(todoList.filter((_, i) => id !== i));
-  };
-
+  const handleDelete=(id)=>{
+    setTodoList(todoList.filter((_,i)=>id!==1));
+  }
+  const handleRemove=()=>{
+    setTodoList([]);
+  }
   return (
     <div>
-      <h1>TODO LIST</h1>
-      <div style={{ display: "flex" }}>
-        <input
-          type="text"
-          placeholder="item"
-          value={todo}
-          onChange={handlechange}
-          onKeyDown={handleKeyDown}
-        />
-        <button onClick={handleclick}>
-          {editingIndex !== null ? "Update item" : "Add item"}
-        </button>
+      <h1>TO DO LIST</h1>
+      <div style={{display:"flex"}}>
+        <input type='text' placeholder='Task' value={todo} onChange={handlechange} onKeyDown={handleKeyDown}/>
+        <button onClick={handleclick}>{editingIndex!==null?"Update item":"Add item"}</button>
+        <button onClick={handleRemove}>Delete All</button>
       </div>
-      <br />
-      {todoList.map((item, id) => {
-        return (
-          <div key={id} style={{ display: "flex" }}>
-            <li>{item}</li>
-            <button onClick={() => handleUpdate(id, item)}>Update</button>
-            <button onClick={() => handleDelete(id)}>Delete</button>
+      <br/>
+      {todoList.map((item,id)=>{
+        return(
+          <div key={id} style={{display:"flex"}}>
+          <li>{item}</li>
+          <button onClick={()=>handleUpdate(id,item)}>Update</button>
+          <button onClick={()=>handleDelete(id,item)}>Delete</button>
           </div>
         );
       })}
@@ -65,4 +57,4 @@ function TodoList() {
   );
 }
 
-export default TodoList;
+export default Todolist;
