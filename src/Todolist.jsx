@@ -30,7 +30,7 @@ function Todolist() {
   const handleDelete=(id)=>{
     setTodoList(todoList.filter((_,i)=>id!==1));
   }
-  return (
+  return (     
     <div>
       <h1>TO DO LIST</h1>
       <div style={{display:"flex"}}>
