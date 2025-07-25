@@ -10,7 +10,7 @@ function Counter() {
   const handleReset=()=>{
     setCount(0);
   }
-  return (
+  return (     
     <div>
       <h1>Counter</h1>
       <button onClick={()=>setCount(count+1)}>+</button>
