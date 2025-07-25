@@ -17,7 +17,7 @@ function Counter() {
       <p>{count}</p>
       <button onClick={handleMinus}>-</button>
       <button onClick={handleReset}>Reset</button>
-    </div>
+    </div>       
   );
 }
 
