@@ -5,7 +5,7 @@ function Counter() {
   const handleMinus=()=>{
     if(count>0){
       setCount(count-1);
-    }
+    }    
   }
   const handleReset=()=>{
     setCount(0);
