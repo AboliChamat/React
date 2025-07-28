@@ -12,7 +12,7 @@ function Todolist() {
       const updatedList=[...todoList];
       updatedList[editingIndex]=todo;
       setTodoList(updatedList);
-    }
+    }                
     else{
     setTodoList([...todoList,todo]);
     }
