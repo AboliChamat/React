@@ -12,7 +12,7 @@ function Input() {
         }
     }
     function handleChange(e){
-        if(number>100){
+        if(number>100){                    
             alert('number should be less than 100');
         }
         else{
