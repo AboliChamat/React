@@ -6,7 +6,7 @@ function Todolist() {
   const[editingIndex,setEditingIndex]=useState(null);
   const handlechange=(e)=>{
     setTodo(e.target.value);
-  }
+  }     
   const handleclick=()=>{
     if(editingIndex!==null){
       const updatedList=[...todoList];
