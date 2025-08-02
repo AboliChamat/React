@@ -7,7 +7,7 @@ function StaticData() {
   useEffect(() => {
     setDataOne(Data);
     setDataMany(Data);
-  }, []);
+  }, []);     
   return (
     <div>
       <h1>Data One</h1>
