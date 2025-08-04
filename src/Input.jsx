@@ -9,7 +9,7 @@ function Input() {
         }
         else{
             setName(e.target.value);
-        }
+        }       
     }
     function handleChange(e){
         if(number>100){                    
