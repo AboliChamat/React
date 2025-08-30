@@ -12,7 +12,7 @@ function TodoList() {
     setTodo('');
   }
   const handleRemove = () =>{
-    setTodoList([]);  
+    setTodoList([]);
   }
   const handleDelete = (id) =>{
     setTodoList(todoList.filter((elem, i)=> id !== i));
